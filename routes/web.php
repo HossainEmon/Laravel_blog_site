@@ -45,4 +45,14 @@ Route::get('/edit.post/{id}','EditpostController@EditPost');
 Route::post('/update.post/{id}','UpdatepostController@UpdatePost');
 Route::get('/delete.post/{id}','DeletepostController@DeletePost');
 
+//student
+
+Route::get('/student','StudentController@Student')->name('student');
+Route::post('/store.student','StudentController@string')->name('store.student');
+Route::get('all.student','StudentController@index')->name('all.student');
+Route::get('view.student/{id}','StudentController@show');
+Route::get('delete.student/{id}','StudentController@destroy');
+Route::get('edit.student/{id}','StudentController@edit');
+Route::post('update/student/{id}','StudentController@update');
+
 
